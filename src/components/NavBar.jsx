@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/NavBar.module.css';
 import Logo from '../assets/ubisoft.png';
 import { FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6';
