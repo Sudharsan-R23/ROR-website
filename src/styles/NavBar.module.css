@@ -1,260 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
 
-
-.NavContainer {
-    width: 100%;
-    background: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-    }
-
-.LogoContainer img {
-    height: 32px;
-    cursor: pointer;
-    }
-
-.NavContxt {
-    display: flex;
-    gap: 20px;
-    }
-
-.NavContxt h1 {
-    position: relative;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-family: "Texturina", serif;
-    color: #ffffff;
-    padding: 10px 18px;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.3s ease;
-    }
-
-    .NavContxt h1:hover {
-    color: #4da3ff;
-    text-shadow:
-        0 0 8px rgba(77, 163, 255, 0.7),
-        2px 2px 0 #000000;
-    transform: translateY(-2px);
-    }
- 
-
-    .NavContxt h1::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg,
-            transparent,
-            #4da3ff,
-            #ffffff,
-            #4da3ff,
-            transparent);
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-    }
-
-    .NavContxt h1:hover::after {
-    width: 120%;
-    }
-
-    .NavContxt h1:active {
-    transform: translateY(1px);
-    color: #ffffff;
-    }
-
-.FollowDetails {
-    position: relative;
-    }
-
-    .FollowDetails summary::-webkit-details-marker {
-    display: none;
-    }
-
-.FollowDetails summary {
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-family: "Texturina", serif;
-    color: #ffffff;
-    padding: 10px 18px;
-    list-style: none;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.3s ease;
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #000;
 }
 
-.FollowDetails summary:hover {
-    color: #4da3ff;
-    text-shadow:
-        0 0 8px rgba(77, 163, 255, 0.7),
-        2px 2px 0 #000000;
-    transform: translateY(-2px);
+.NavBar {
+  height: 72px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.FollowPanel {
-    position: absolute;
-    top: 46px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 18px;
-    background: #000000;
-    padding: 14px 18px;
-    border: 1px solid #4da3ff;
-    border-radius: 6px;
-    animation: fadeSlide 0.3s ease;
-    z-index: 100;
+.Logo {
+  height: 34px;
 }
 
-.FollowPanel svg, .Smedia svg {
-    font-size: 40px;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.25s ease;
+
+.Menu {
+  display: flex;
+  align-items: center;
+  gap: 26px;
 }
 
-.FollowPanel svg:hover {
-    color: #4da3ff;
-    filter: drop-shadow(0 0 6px #4da3ff);
-    transform: translateY(-2px);
+.Item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  position: relative;
+  transition: color .3s ease, transform .3s ease;
 }
 
-.FollowDetails[open] summary {
-    color: #4da3ff;
+.Item:hover {
+  color: #4da3ff;
+  transform: translateY(-2px);
 }
 
-@keyframes fadeSlide {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
+.Follow {
+  position: relative;
 }
-    .svg {
-      fill-rule: evenodd;
-      clip-rule: evenodd;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-miterlimit: 1.5;
-      cursor: pointer;
-    }
 
-    .svg path {
-      fill: none;
-      stroke: #ffffff;
-      stroke-width: 2px;
-    }
-
-    .icons {
-      width: 30px;
-      display: none;
-      align-items: center;
-    }
-
-    .top,
-    .bottom {
-      stroke-dasharray: 30, 75.39;
-      transition: all 0.6s cubic-bezier(0.6, 0.33, 0.67, 1.29);
-    }
-
-    svg.active .top,
-    svg.active .bottom {
-      stroke-dasharray: 75.39;
-      stroke-dashoffset: -60;
-    }
-
-    .icons svg:nth-child(2) {
-      transform: rotate(0deg);
-      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-   .icons svg:nth-child(2) path {
-      transition: all 0.4s ease-in-out 0.6s;
-    }
-
-    .icons svg:nth-child(2).active {
-      transform: rotate(180deg);
-    }
-
-    .rocket .top {
-      stroke-dasharray: 30, 88;
-    }
-
-.sideNav{
-    background-color: #000000;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 0.4s ease-in-out,
-              opacity 0.3s ease-in-out;
-    
+.FollowBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: color .3s ease;
 }
-.sideNav.active {
-  transform: translateX(0);
+
+.FollowBtn:hover {
+  color: #4da3ff;
+}
+
+.FollowBox {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #000;
+  border: 1px solid #4da3ff;
+  padding: 12px 16px;
+  display: flex;
+  gap: 18px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all .35s ease;
+}
+
+.FollowBox.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.FollowBox svg {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform .3s ease, color .3s ease;
+}
+
+.FollowBox svg:hover {
+  color: #4da3ff;
+  transform: translateY(-3px);
+}
+
+.Toggle {
+  display: none;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Toggle span {
+  width: 26px;
+  height: 2px;
+  background: #fff;
+  transition: all .4s ease;
+}
+
+.Toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.Toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.Toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.MobileMenu {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 30px;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: -1;
+  transition: transform .5s ease, opacity .4s ease;
+}
+
+.MobileMenu.open {
+  transform: translateY(0);
   opacity: 1;
 }
-.Smedia{
-    display: flex;
-    gap: 25px;
-    background-color: #4da3ff;
-    width: 200px;
-    padding: 10px;
-    justify-content: space-around;
-    border-radius: 20px;
-    box-shadow: rgba(26, 151, 234, 0.753) 0px 2px 5px -1px, rgba(44, 119, 231, 0.734) 0px 1px 3px -1px;
+
+.MobileItem {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: color .3s ease, transform .3s ease;
 }
 
-.sideContxt h1{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "Texturina", serif;   
-}
-.sideContxt h1:hover{
-    color: #4da3ff;
-}
-.sideContxt {
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    top: 70px;
-    gap: 50px;
-    margin-left: 40px;
-}
-@media screen and (max-width:1024px){
-  
-    .icons{
-        display: flex;
-    }
-    .NavContxt{
-        display: none;
-    }
+.MobileItem:hover {
+  color: #4da3ff;
+  transform: translateX(6px);
 }
 
-@media screen and (max-width:700px){
-  .sideContxt h1{
-    font-size: 20px;
+.MobileSocial {
+  display: flex;
+  gap: 22px;
+}
+
+.MobileSocial svg {
+  font-size: 28px;
+  color: #fff;
+}
+
+.MobileSocial svg:hover {
+  color: #4da3ff;
+}
+
+@media (max-width: 900px) {
+  .Menu {
+    display: none;
   }
+  .Toggle {
+    display: flex;
+  }
+}
+.FollowBox {
+  right: 50%;
+  transform: translate(50%, -10px);
+}
+
+.FollowBox.show {
+  transform: translate(50%, 0);
+}
+.MobileItem {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+
+  opacity: 0;
+  transform: translateY(-10px);
+
+  transition: transform .4s ease, opacity .4s ease;
+}
+
+.MobileMenu.open .MobileItem {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.MobileMenu.open .MobileItem:nth-child(1) { transition-delay: .1s; }
+.MobileMenu.open .MobileItem:nth-child(2) { transition-delay: .15s; }
+.MobileMenu.open .MobileItem:nth-child(3) { transition-delay: .2s; }
+.MobileMenu.open .MobileItem:nth-child(4) { transition-delay: .25s; }
+
+.MobileMenu {
+  position: absolute;     
+  top: 72px;              
+  left: 0;
+  width: 100%;          
+
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 30px;
+
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: transform .45s ease, opacity .35s ease;
+}
+
+.MobileMenu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
