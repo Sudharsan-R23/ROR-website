@@ -10,6 +10,7 @@
   height: 72px;
   padding: 0 28px;
   display: flex;
+  font-family: "Texturina", serif;
   align-items: center;
   justify-content: space-between;
 }
@@ -47,6 +48,7 @@
   background: none;
   border: none;
   color: #fff;
+  font-family: "Texturina", serif;
   font-size: 14px;
   letter-spacing: 3px;
   cursor: pointer;
@@ -60,6 +62,8 @@
 .FollowBox {
   position: absolute;
   top: 40px;
+  box-sizing: 20px;
+  border-radius: 10px;
   right: 0;
   background: #000;
   border: 1px solid #4da3ff;
