@@ -1,8 +1,11 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import styles from '../styles/NavBar.module.css'
-import Logo from '../assets/ubisoft.png'
-import { FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import styles from '../styles/NavBar.module.css';
+import Logo from '../assets/ubisoft.png';
+import { FaInstagram, FaXTwitter} from 'react-icons/fa6'
+import { SlSocialLinkedin } from "react-icons/sl";
+import { FiYoutube } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -39,7 +42,8 @@ export default function NavBar() {
             <div className={`${styles.FollowBox} ${followOpen ? styles.show : ''}`}>
               <FaInstagram onClick={() => openLink('https://instagram.com')} />
               <FaXTwitter onClick={() => openLink('https://twitter.com')} />
-              <FaYoutube onClick={() => openLink('https://youtube.com')} />
+              <FiYoutube onClick={() => openLink('https://youtube.com')} />
+              <SlSocialLinkedin onClick={() => openLink('https://youtube.com')} />
             </div>
           </div>
         </div>
@@ -65,7 +69,8 @@ export default function NavBar() {
         <div className={styles.MobileSocial}>
           <FaInstagram onClick={() => openLink('https://instagram.com')} />
           <FaXTwitter onClick={() => openLink('https://twitter.com')} />
-          <FaYoutube onClick={() => openLink('https://youtube.com')} />
+          <FiYoutube onClick={() => openLink('https://youtube.com')} />
+          <SlSocialLinkedin onClick={() => openLink('https://youtube.com')} />
         </div>
       </div>
     </header>
