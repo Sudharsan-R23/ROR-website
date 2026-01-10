@@ -5,7 +5,7 @@ import Logo from '../assets/ubisoft.png';
 import { FaInstagram, FaXTwitter} from 'react-icons/fa6'
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiYoutube } from "react-icons/fi";
-import { TbBrandDiscord } from "react-icons/tb";
+
 
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false)
