@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css';
-import Banner from '../assets/Banner.webp'
+import Banner from '../assets/B2.jpg'
 
 export default function Home() {
   return (
