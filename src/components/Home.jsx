@@ -1,13 +1,14 @@
 import styles from '../styles/Home.module.css';
+import Banner from '../assets/Banner.webp'
 
 export default function Home() {
   return (
     <div className={styles.Hcontainer}>
       <section className={styles.Home}>
-        <h1>Home</h1>
+        <img src={Banner} alt="" />
       </section>
-      <section className={styles.game}>
-
+      <section className={styles.Game}>
+        <h1>jhhh</h1>
       </section>
     </div>
   )
