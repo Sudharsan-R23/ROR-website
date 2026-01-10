@@ -1,7 +1,14 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className={styles.Hcontainer}>
+      <section className={styles.Home}>
+        <h1>Home</h1>
+      </section>
+      <section className={styles.game}>
+
+      </section>
+    </div>
   )
 }
