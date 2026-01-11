@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
-import Banner from '../assets/B1.png';
+import Banner from '../assets/B1.webp';
 import Logo from '../assets/ubisoft.png'
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
@@ -15,7 +15,7 @@ export default function Home() {
       <section className={styles.Home}>
 
         <div className={styles.HeadDev}>
-          
+          <img src={Banner} alt="" loading="lazy"/>
 
           <div className={styles.HomeContxt}>
   
@@ -31,12 +31,12 @@ export default function Home() {
                 <IoLogoAppleAppstore />
               </div>
 
-            {!open &&<div className={styles.PlayIcons}>
+            <div className={`${styles.PlayIcons} ${open ? styles.hide : ''}`}>
               <FaSteam />
               <SiEpicgames />
               <FaPlaystation />
               <FaXbox />
-            </div>}
+            </div>
 
           </div>
         </div>

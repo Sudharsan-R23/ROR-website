@@ -62,7 +62,8 @@
     0 0 15px rgba(255,180,80,0.7),
     0 0 40px rgba(255,80,0,0.6),
     0 0 80px rgba(255,0,0,0.9);
-  animation: kingAura 3s infinite ease-in-out;
+    will-change: filter, transform;
+    animation: kingAura 4s infinite alternate;
 }
 
 
@@ -162,6 +163,12 @@
       0 0 60px rgba(255,40,0,0.6);
   }
 }
+.hide{
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+
 
 @media (max-width: 900px) {
   .HomeContxt h1{
