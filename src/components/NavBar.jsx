@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/NavBar.module.css';
 import Logo from '../assets/ubisoft.png';
@@ -21,7 +21,8 @@ export default function NavBar() {
   }
 
   return (
-    <header className={styles.Header}>
+    <>
+  <header className={styles.Header}>
       <nav className={styles.NavBar}>
         <img src={Logo} className={styles.Logo} alt="logo" />
 
@@ -74,5 +75,6 @@ export default function NavBar() {
         </div>
       </div>
     </header>
+    </>
   )
 }
