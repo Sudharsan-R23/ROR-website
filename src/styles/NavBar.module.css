@@ -10,7 +10,7 @@
   height: 72px;
   padding: 0 28px;
   display: flex;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Texturina", serif;
   align-items: center;
   justify-content: space-between;
 }
@@ -36,7 +36,7 @@
 }
 
 .Item:hover {
-  color: #4da3ff;
+  color: #ffb350;
   transform: translateY(-2px);
 }
 
@@ -48,7 +48,7 @@
   background: none;
   border: none;
   color: #fff;
-  font-family: "Bebas Neue", sans-serif;
+  
   font-size: 14px;
   letter-spacing: 3px;
   cursor: pointer;
@@ -56,7 +56,7 @@
 }
 
 .FollowBtn:hover {
-  color: #4da3ff;
+  color:  #ffb350;
 }
 
 .FollowBox {
@@ -66,7 +66,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 10px;
   background: #000;
-  border: 1px solid #4da3ff;
+  border: 1px solid #ffb350;
   padding: 12px 16px;
   display: flex;
   gap: 17px;
@@ -90,7 +90,7 @@
 }
 
 .FollowBox svg:hover {
-  color: #4da3ff;
+  color: #ffb350;
   transform: translateY(-3px);
 }
 
@@ -150,7 +150,7 @@
 }
 
 .MobileItem:hover {
-  color: #4da3ff;
+  color:  #ffb350;
   transform: translateX(6px);
 }
 
@@ -165,7 +165,7 @@
 }
 
 .MobileSocial svg:hover {
-  color: #4da3ff;
+  color:  #ffb350;
 }
 
 .FollowBox {
