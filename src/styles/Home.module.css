@@ -54,7 +54,7 @@
 
 
 .HomeContxt h1{
-  font-family: "Metal Mania", system-ui;
+ font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: clamp(3rem, 6vw, 5rem);
   color: #f5e6c8;
   text-transform: uppercase;
@@ -68,7 +68,7 @@
 
 
 .HomeContxt p{
-  font-family: "Texturina", serif;
+ font-family: "Garamond", "Palatino Linotype", Georgia, serif;
   font-size: 1.2rem;
   color: #ffffff;
 }

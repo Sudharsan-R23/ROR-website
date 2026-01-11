@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import Banner from '../assets/B1.webp';
-import Logo from '../assets/ubisoft.png'
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";

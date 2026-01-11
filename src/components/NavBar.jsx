@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/NavBar.module.css';
-import Logo from '../assets/ubisoft.png';
+import Logo from '../assets/ubisoft.webp';
 import { FaInstagram, FaXTwitter} from 'react-icons/fa6'
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiYoutube } from "react-icons/fi";
