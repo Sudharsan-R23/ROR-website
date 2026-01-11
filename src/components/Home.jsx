@@ -15,7 +15,7 @@ export default function Home() {
       <section className={styles.Home}>
 
         <div className={styles.HeadDev}>
-          <img src={Banner} alt="" />
+          
 
           <div className={styles.HomeContxt}>
   
