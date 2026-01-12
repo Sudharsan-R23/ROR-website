@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import Banner from '../assets/B1.webp';
+import Banner2 from '../assets/B2.webp';
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";
@@ -41,8 +42,9 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.Game}>
-        <p>lkl</p>
+        <img src={Banner2} alt="" />
       </section>
+      <section className={styles.section3}></section>
     </div>
   )
 }
