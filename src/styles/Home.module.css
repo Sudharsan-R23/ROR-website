@@ -68,7 +68,7 @@
 }
 
 .HomeContxt p{
- font-family: "Garamond", "Palatino Linotype", Georgia, serif;
+  font-family: "Texturina", serif;
   font-size: 1.2rem;
   color: #ffffff;
 }
@@ -102,7 +102,7 @@
 }
 
 .MobileContxt{
-  display: flex;                 /* <-- FIX */
+  display: flex;               
   opacity: 0;
   gap: 12px;
   padding: 12px 18px;

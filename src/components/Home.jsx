@@ -19,7 +19,7 @@ export default function Home() {
           <div className={styles.HomeContxt}>
   
             <h1>REVENGE OF REALMS</h1>
-            <p>Let's play differently in the game!</p>
+            <p>A king will fight long for empire</p>
 
             <div className={styles.ButtonContxt}>
               <button>PLAY</button>
