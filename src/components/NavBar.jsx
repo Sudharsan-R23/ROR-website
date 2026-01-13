@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <>
-  <header className={styles.Header}>
+  <header className={`${styles.Header} ${mobileOpen ? styles.show : ''}`}>
       <nav className={styles.NavBar}>
         <img src={Logo} className={styles.Logo} alt="logo" />
 
