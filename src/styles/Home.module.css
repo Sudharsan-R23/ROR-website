@@ -194,7 +194,13 @@
   z-index: -1;
 }
 .GameImg{
-  width: 190px;
+  width: 220px;
+   animation: floatImage 6s ease-in-out infinite;
+}
+@keyframes floatImage{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-17px); }
+  100%{ transform: translateY(0); }
 }
 .GameContxt{
   display: flex;
@@ -241,9 +247,9 @@
     
   }
   .GameImg{
-    width: 100px;
+    width: 90px;
   }
   .GameContxt{
-    margin: 90px 5px;
+    margin: 100px 5px;
   }
 }
