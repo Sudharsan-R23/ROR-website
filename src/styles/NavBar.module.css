@@ -2,7 +2,6 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: transparent;
 }
 .Header.showH{
   background-color: #000000;

@@ -204,6 +204,9 @@
 }
 .GameContxt img{
   width: 200px;
-  position: relative;
-  z-index: 20;
+  height: auto;
+}
+.GameContxt{
+  position: absolute;
+  z-index: 4;
 }
