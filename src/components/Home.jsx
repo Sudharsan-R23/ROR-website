@@ -43,9 +43,14 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.Game}>
-        <img src={Banner2} alt="" />
+      <img className={styles.GameBanner} src={Banner2} alt="" />
         <div className={styles.GameContxt}>
-          <img src={jc} alt="" />
+          <img className={styles.GameImg} src={jc} alt=""/>
+          <div className={styles.GameItem}>
+            <h1>Lorem ipsum doxercitationem.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti est quisquam velit commodi, natus soluta id sit, odio dignissimos qui adipisci suscipit! Voluptate cumque quas, quasi nemo ad ipsam magni optio officiis aperiam cupiditate quibusdam voluptatem ratione consequuntur hic nulla, quaerat error totam nesciunt, id harum numquam omnis expedita.</p>
+            <p>rferendis numquam unde in distinctio iste ducimus doloribus, dignissimos dolorum natus modi aut nam aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, labore illum saepe culpa officia facilis et deserunt nostrum, id voluptatibus, nihil itaque blanditiis. Et suscipit placeat error deleniti aspernatur ut.</p>
+          </div>
         </div>
       </section>
       <section className={styles.section3}>
