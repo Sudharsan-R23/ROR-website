@@ -194,20 +194,20 @@
   z-index: -1;
 }
 .GameImg{
-  width: 160px;
+  width: 190px;
 }
 .GameContxt{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0px 30px;
+  margin: 70px 70px;
 }
 .GameItem{
   width: 70%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .GameItem h1{
@@ -216,6 +216,7 @@
 .GameItem p{
     font-family: "Texturina", serif;
     line-height: 1.5;
+    text-align: justify;
 }
 
 @media (max-width: 900px) {
@@ -232,12 +233,17 @@
     padding: 10px 34px;
   }
 
+  .GameItem{
+    font-size: 10px;
+  }
   .GameContxt{
     flex-direction: column;
     
   }
-
   .GameImg{
     width: 100px;
-}
+  }
+  .GameContxt{
+    margin: 90px 5px;
+  }
 }
