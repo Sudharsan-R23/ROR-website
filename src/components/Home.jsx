@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import Banner from '../assets/B1.webp';
-import Banner2 from '../assets/B2.png';
-import jc from '../assets/jc.png';
+import Banner2 from '../assets/B2.webp';
+import jc from '../assets/jc.webp';
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";

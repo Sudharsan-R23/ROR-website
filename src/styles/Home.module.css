@@ -113,8 +113,9 @@
   display: flex;
   opacity: 0;
   gap: 12px;
+  margin-top: 30px;
   padding: 12px 18px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #0000008b;
   border: 1px solid #ffb350;
   border-radius: 10px;
   transform: translateY(20px) scale(0.9);
@@ -199,7 +200,7 @@
 }
 @keyframes floatImage{
   0%{ transform: translateY(0); }
-  50%{ transform: translateY(-17px); }
+  50%{ transform: translateY(-20px); }
   100%{ transform: translateY(0); }
 }
 .GameContxt{
