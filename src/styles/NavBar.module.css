@@ -22,10 +22,27 @@
 .Logo {
   height: 34px;
 }
+.musicBtn {
+  background: transparent;
+  border: none;
+  padding-top: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musicBtn:hover {
+  transform: scale(1.1);
+}
+
+.musicBtn svg {
+  font-size: 25px;
+}
 
 .Menu {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 26px;
 }
 
@@ -97,7 +114,7 @@
   transform: translateY(-3px);
 }
 
-.Toggle {
+.Toggle2 {
   display: none;
   background: none;
   border: none;
@@ -105,22 +122,30 @@
   gap: 6px;
 }
 
-.Toggle span {
+.Toggle2 span {
   width: 26px;
   height: 2px;
   background: #fff;
   transition: all .4s ease;
 }
 
-.Toggle.active span:nth-child(1) {
+.Toggle{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0px;
+}
+
+.Toggle2.active span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.Toggle.active span:nth-child(2) {
+.Toggle2.active span:nth-child(2) {
   opacity: 0;
 }
 
-.Toggle.active span:nth-child(3) {
+.Toggle2.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -214,7 +239,7 @@
     display: none;
   }
 
-  .Toggle {
+  .Toggle2,.Toggle {
     display: flex;
   }
 }

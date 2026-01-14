@@ -14,26 +14,6 @@
   scroll-snap-align: start;
 }
 
-.musicBtn {
-  position: absolute;
-  bottom: 60px;
-  right: 30px;
-  background: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-  z-index: 2000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.musicBtn:hover {
-  transform: scale(1.1);
-}
-
-.musicBtn svg {
-  font-size: 25px;
-}
-
 
 ::-webkit-scrollbar {
   display: none;

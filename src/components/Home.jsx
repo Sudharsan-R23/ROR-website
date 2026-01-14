@@ -3,8 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 import Banner from '../assets/B1.webp';
 import Banner2 from '../assets/B2.webp';
 import jc from '../assets/jc.webp';
-import bmusic from '../assets/music.mp3'
-import { MdMusicNote, MdMusicOff } from "react-icons/md";
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";
@@ -14,27 +12,11 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const audioRef = useRef(null);
 
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  const toggleMusic = () => {
-    if (!audioRef.current) return;
-
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-
-    setIsPlaying(!isPlaying);
-  }
 
   return (
     <div className={styles.Hcontainer}>
-      <audio ref={audioRef} src={bmusic} loop preload="auto" />
-
-      <button className={styles.musicBtn} onClick={toggleMusic}>
-        {isPlaying ? <MdMusicNote /> : <MdMusicOff />}
-      </button>
+      
       <section className={styles.Home}>
 
         <div className={styles.HeadDev}>
