@@ -14,7 +14,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const audioRef = useRef(null);
 
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleMusic = () => {
     if (!audioRef.current) return;
