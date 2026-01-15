@@ -4,12 +4,22 @@
     width: 100%;
 }
 
+.Icons svg {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform .3s ease, color .3s ease;
+}
+
+.Icons svg:hover {
+  color: #0000007a;
+  transform: translateY(-3px);
+}
+
 .Footertxt {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
 }
 
 .FooterSec1 {
@@ -19,18 +29,21 @@
     justify-content: center;
     align-items: center;
     z-index: 200;
-    gap: 30px;
-    margin: 20px 20px;
+    gap: 50px;
+    margin: 0px 20px;
 }
 
 .Icons {
-    margin-top: 5px;
     display: flex;
+    font-family: monospace;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .Icons svg {
     font-size: 30px;
+    margin-top: 5px;
 }
 
 .FooterLogo img {
@@ -45,41 +58,14 @@
 
 
 .FooterPara p {
-    text-align: justify;
+    text-align:center;
 }
 
-@media (max-width: 1000px) {
-    .FooterPara p {
+@media (max-width: 900px) {
+    .Icons {
         font-size: 10px;
     }
-
-    .FooterSec1 {
-        gap: 10px;
+    .FooterSec1{
+       gap: 10px;
     }
-    .FooterLogo img{
-        width: 30px;
-    }
-    .Icons h1{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .FooterPara p {
-        font-size: 5px;
-    }
-    .Icons h1{
-        font-size: 15px;
-    }
-    .FooterSec1 {
-        gap: 10px;
-    }
-    .FooterLogo img{
-        width: 30px;
-    }
-    .Icons svg {
-    font-size: 20px;
-}
-
-    
 }
