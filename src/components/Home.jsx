@@ -8,6 +8,8 @@ import gb2 from '../assets/Game2Banner.webp'
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";
+import Footer from './Footer';
+
 
 export default function Home() {
 
@@ -17,6 +19,7 @@ export default function Home() {
 
 
   return (
+
     <div className={styles.Hcontainer}>
 
       <section className={styles.Home}>
@@ -69,6 +72,11 @@ export default function Home() {
           <img className={styles.GameImg} src={jc2} alt="" />
         </div>
       </section>
+      <section className={styles.FooterSec}>
+        <Footer />
+      </section>
+       
     </div>
+   
   )
 }

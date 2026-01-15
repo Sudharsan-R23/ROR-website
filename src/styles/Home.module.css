@@ -13,7 +13,11 @@
   width: 100%;
   scroll-snap-align: start;
 }
-
+.FooterSec{
+  
+  width: 100%;
+  scroll-snap-align: start;
+}
 
 ::-webkit-scrollbar {
   display: none;
