@@ -66,9 +66,11 @@
 
 @media (max-width: 600px) {
     .FooterPara p {
-        font-size: 10px;
+        font-size: 5px;
     }
-
+    .Icons h1{
+        font-size: 15px;
+    }
     .FooterSec1 {
         gap: 10px;
     }
