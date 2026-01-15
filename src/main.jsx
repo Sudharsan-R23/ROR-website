@@ -3,13 +3,27 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Web from './Web'
+import UnderDev from './UnderDev'
 
 
 const path =createBrowserRouter([
   {
     path:'/',
     element:<Web/>
+  },
+  {
+    path:'/event',
+    element:<UnderDev/>
+  },
+  {
+    path:'/dev',
+    element:<UnderDev/>
+  },
+  {
+    path:'/redeem',
+    element:<UnderDev/>
   }
+
 
 ])
 

@@ -6,3 +6,31 @@
   box-sizing: border-box;
    -webkit-tap-highlight-color: transparent;
 }
+
+.UnderDev img{
+    width: 500px;
+}
+
+.UnderDev{
+  position:absolute;
+  top: 0px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-color: #BCCCFE;
+}
+
+@media (max-width: 900px) {
+  .UnderDev img{
+    width: 300px;
+  }
+  .UnderDev h1{
+    font-size: 30px;
+  }
+}

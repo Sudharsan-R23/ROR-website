@@ -27,7 +27,7 @@ export default function Home() {
           <div className={styles.HomeContxt}>
 
             <h1>REVENGE OF REALMS</h1>
-            <p>A king will fight long for empire</p>
+            <p>Latin Christian kingdoms of Europe</p>
 
             <div className={styles.ButtonContxt}>
               <button>PLAY</button>
@@ -44,7 +44,6 @@ export default function Home() {
               <FaPlaystation />
               <FaXbox />
             </div>
-
           </div>
         </div>
       </section>
@@ -53,9 +52,9 @@ export default function Home() {
         <div className={styles.GameContxt}>
           <img className={styles.GameImg} src={jc} alt="" />
           <div className={styles.GameItem}>
-            <h1>Lorem ipsum doxercitationem.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti est quisquam velit commodi, natus soluta id sit, odio dignissimos qui adipisci suscipit! Voluptate cumque quas, quasi nemo ad ipsam magni optio officiis aperiam cupiditate quibusdam voluptatem ratione consequuntur hic nulla, quaerat error totam nesciunt, id harum numquam omnis expedita.</p>
-            <p>rferendis numquam unde in distinctio iste ducimus doloribus, dignissimos dolorum natus modi aut nam aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, labore illum saepe culpa officia facilis et deserunt nostrum, id voluptatibus, nihil itaque blanditiis. Et suscipit placeat error deleniti aspernatur ut.</p>
+            <h1>Throne Demands Blood</h1>
+            <p>Once crowned ruler of Valemarch, King Aldric lost his kingdom to invasion, betrayal, and war. His castle fell, his banner was torn down, and his people were scattered across foreign lands.</p>
+            <p>Driven by faith and duty rather than pride, Aldric now walks the path of exile—gathering allies, rebuilding his army, and questioning the meaning of kingship. His journey is not only to reclaim a throne, but to decide what kind of king he will become when power is finally restored.</p>
           </div>
         </div>
       </section>
@@ -63,9 +62,9 @@ export default function Home() {
         <img className={styles.GameBanner} src={gb2} alt="" />
         <div className={`${styles.GameContxt} ${styles.Game2Contxt}`}>
           <div className={styles.GameItem}>
-            <h1>Lorem ipsum doxercitationem.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti est quisquam velit commodi, natus soluta id sit, odio dignissimos qui adipisci suscipit! Voluptate cumque quas, quasi nemo ad ipsam magni optio officiis aperiam cupiditate quibusdam voluptatem ratione consequuntur hic nulla, quaerat error totam nesciunt, id harum numquam omnis expedita.</p>
-            <p>rferendis numquam unde in distinctio iste ducimus doloribus, dignissimos dolorum natus modi aut nam aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, labore illum saepe culpa officia facilis et deserunt nostrum, id voluptatibus, nihil itaque blanditiis. Et suscipit placeat error deleniti aspernatur ut.</p>
+            <h1>Desert Forged Power</h1>
+            <p>The Sultanate of Al-Zahra is a powerful Muslim empire built on discipline, unity, and strategic mastery. Rising from the deserts and great cities of the east, the empire expanded through strength and belief in order.</p>
+            <p>To them, conquered lands are not stolen—they are secured for stability and survival. As King Aldric seeks to reclaim his lost kingdom, Al-Zahra stands as both his greatest enemy and a reminder that every empire believes its cause is just.</p>
           </div>
           <img className={styles.GameImg} src={jc2} alt="" />
         </div>
