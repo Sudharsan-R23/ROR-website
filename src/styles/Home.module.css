@@ -8,7 +8,7 @@
 }
 
 .Home,
-.Game,.section3 {
+.Game,.Game2 {
   height: 100vh;
   width: 100%;
   scroll-snap-align: start;
@@ -182,12 +182,12 @@
   transform: scale(0.8);
 }
 
-.Game{
+.Game, .Game2{
   background-color: #00000096;
   width: 100%;
   display: flex;
 }
-.Game .GameBanner{
+.GameBanner{
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -206,7 +206,7 @@
 }
 .GameContxt{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 70px 70px;
 }
@@ -246,12 +246,16 @@
   }
   .GameContxt{
     flex-direction: column;
-    
+    margin: 100px 1px;
   }
   .GameImg{
     width: 90px;
   }
-  .GameContxt{
-    margin: 100px 5px;
+  .Game2Contxt .GameImg{
+    order: 1;
+    width: 120px;
+  }
+  .Game2Contxt .GameItem{
+    order: 2;
   }
 }
