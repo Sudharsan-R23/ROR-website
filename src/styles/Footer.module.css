@@ -55,12 +55,6 @@
     gap: 70px;
 }
 
-
-
-.FooterPara p {
-    text-align:center;
-}
-
 @media (max-width: 900px) {
     .Icons {
         font-size: 10px;

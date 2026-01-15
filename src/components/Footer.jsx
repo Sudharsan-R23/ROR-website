@@ -30,9 +30,6 @@ export default function Footer() {
           <AiOutlineLinkedin onClick={() => openLink('https://youtube.com')} />
         </div>
         
-        <div className={styles.FooterPara}>
-          <p> s illo impedit facilis veritatis quaerat magni nulla non libero, vero.</p>
-        </div>
       </div>
 
     </div>
