@@ -1,5 +1,5 @@
 import { React } from 'react';
-import Logo from '../assets/ubisoft.png';
+import Logo from '../assets/ubisoftBlack.png';
 import Unreal from '../assets/Unreal.png';
 import styles from '../styles/Footer.module.css';
 import FooterBanner from '../assets/FooterB.jpg';
