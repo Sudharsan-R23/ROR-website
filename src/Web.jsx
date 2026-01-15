@@ -7,7 +7,6 @@ export default function Web() {
     <>
     <NavBar/>
     <Home/>
-    
     </>
   )
 }
