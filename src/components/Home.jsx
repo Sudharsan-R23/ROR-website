@@ -87,17 +87,14 @@ export default function Home() {
           <div className={styles.NavLine}></div>
 
           <div className={styles.NavItem}>
-            
             <p>WEAPON I</p>
           </div>
 
           <div className={styles.NavItem}>
-            
             <p>WEAPON II</p>
           </div>
 
           <div className={styles.NavItem}>
-
             <p>WEAPON III</p>
           </div>
         </nav>
@@ -107,21 +104,21 @@ export default function Home() {
               <h1>weapon name</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
             </div>
-            <img src={W1} alt="" />
+            <img className={styles.cardImg} src={W1} alt="" />
           </div>
           <div className={styles.card}>
             <div className={styles.cardText}>
               <h1>weapon name</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
             </div>
-            <img src={W2} alt="" />
+            <img className={styles.cardImg} src={W2} alt="" />
           </div>
           <div className={styles.card}>
             <div className={styles.cardText}>
               <h1>weapon name</h1>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
             </div>
-            <img src={W3} alt="" />
+            <img className={styles.cardImg} src={W3} alt="" />
           </div>
         </section>
       </section>
