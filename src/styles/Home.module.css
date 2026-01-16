@@ -418,13 +418,16 @@
 
   .card{
     flex-direction: column;
+    padding: 0px 15px;
   }
   .cardText{
     order: 2;
     margin-bottom: 90px;
-  }
-  .cardText{
     width: 100%;
+  }
+ 
+  .cardImg{
+    width: 150px;
   }
 
 }
