@@ -173,8 +173,8 @@
   }
 
   .cardImg {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 360px;
+    max-height: 360px;
   }
 
   .CineNav {
@@ -195,7 +195,6 @@
     order: 2;
     max-width: 100%;
     gap: 16px;
-    text-align: center;
   }
 
   .cardText h1 {
@@ -236,8 +235,8 @@
   }
 
   .cardImg {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 170px;
+    max-height: 170px;
   }
 
   .CineNav {
