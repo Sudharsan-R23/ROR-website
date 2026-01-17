@@ -60,7 +60,7 @@ export default function ScrollCard() {
 
   return (
     <section className={styles.SideScreentxt}>
-      <video autoPlay muted loop playsInline className={styles.bgVideo}>
+      <video autoPlay muted loop playsInline preload="none" className={styles.bgVideo}>
         <source src={Bvedio} type="video/mp4" />
       </video>
 
