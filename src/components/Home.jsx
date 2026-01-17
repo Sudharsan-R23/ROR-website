@@ -62,7 +62,7 @@ return (
         </div>
       </section>
       <section className={styles.Game2}>
-        <img className={styles.GameBanner} src={gb2} alt="" />
+        <img className={styles.GameBanner} src={gb2} alt="" loading='lazy'/>
         <div className={`${styles.GameContxt} ${styles.Game2Contxt}`}>
           <div className={styles.GameItem}>
             <h1>Desert Forged Power</h1>

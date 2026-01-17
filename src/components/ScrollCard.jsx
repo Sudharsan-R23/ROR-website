@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '../styles/ScrollCard.module.css';
 import Bvedio from '../assets/BackVideo.mp4';
-import W1 from '../assets/w1.png';
-import W2 from '../assets/w2.png';
-import W3 from '../assets/w3.png';
+import W1 from '../assets/w1.webp';
+import W2 from '../assets/w2.webp';
+import W3 from '../assets/w3.webp';
 
 export default function ScrollCard() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,7 +33,7 @@ export default function ScrollCard() {
       description: "Swift and deadly as its namesake, this blade strikes with the ferocity of the wild.",
       image: W3,
       navLabel: "WEAPON III"
-    },
+    }
   ];
 
   const handleNavClick = (index) => {
@@ -71,7 +71,7 @@ export default function ScrollCard() {
               <h1>{weapon.name}</h1>
               <p>{weapon.description}</p>
             </div>
-            <img className={styles.cardImg} src={weapon.image} alt={weapon.name} />
+            <img className={styles.cardImg} src={weapon.image} alt={weapon.name} loading='lazy'/>
           </div>
         ))}
       </section>

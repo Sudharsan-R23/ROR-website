@@ -1,8 +1,8 @@
 import { React } from 'react';
-import Logo from '../assets/ubisoftBlack.png';
-import Unreal from '../assets/Unreal.png';
+import Logo from '../assets/ubisoftBlack.webp';
+import Unreal from '../assets/Unreal.webp';
 import styles from '../styles/Footer.module.css';
-import FooterBanner from '../assets/FooterB.jpg';
+import FooterBanner from '../assets/FooterB.webp';
 import { FaInstagram, FaXTwitter } from 'react-icons/fa6'
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiYoutube } from "react-icons/fi";
