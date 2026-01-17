@@ -27,7 +27,13 @@ export default function ScrollCard() {
       description: "Swift and deadly as its namesake, this blade strikes with the ferocity of the wild.",
       image: W3,
       navLabel: "WEAPON III"
-    }
+    },
+    {
+      name: "Tiger Fang",
+      description: "Swift and deadly as its namesake, this blade strikes with the ferocity of the wild.",
+      image: W3,
+      navLabel: "WEAPON III"
+    },
   ];
 
   const handleNavClick = (index) => {
