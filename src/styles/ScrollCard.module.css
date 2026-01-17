@@ -1,0 +1,250 @@
+.SideScreentxt {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.SideScrollSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card {
+  flex: 0 0 100%;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 80px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-sizing: border-box;
+}
+
+.cardText {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #f0f8ff;
+  z-index: 1;
+}
+
+.cardText h1 {
+  font-family: "Caesar Dressing", system-ui;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cardText p {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  line-height: 1.8;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cardImg {
+  flex: 0 0 auto;
+  max-width: 450px;
+  max-height: 450px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.CineNav {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 80px);
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(40px, 8vw, 100px);
+  z-index: 10;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.NavLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent 5%, #c9b37a 50%, transparent 95%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.NavItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Texturina", serif;
+}
+
+.NavItem p {
+  font-size: clamp(0.7rem, 1.2vw, 0.95rem);
+  letter-spacing: clamp(2px, 0.3vw, 4px);
+  margin: 0 0 12px 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.NavItem::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 0 10px rgba(201, 179, 122, 0.7);
+  transition: all 0.3s ease;
+}
+
+.NavItem:hover,
+.NavItem.active {
+  opacity: 1;
+}
+
+.NavItem:hover::after,
+.NavItem.active::after {
+  background: #c9b37a;
+  box-shadow: 0 0 20px rgba(201, 179, 122, 1);
+  transform: scale(1.3);
+}
+
+.NavItem:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 40px 60px;
+    gap: 30px;
+  }
+
+  .cardImg {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .CineNav {
+    bottom: 50px;
+    gap: clamp(30px, 6vw, 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 30px 140px;
+    margin-top: 100px;
+  }
+
+  .cardText {
+    order: 2;
+    max-width: 100%;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .cardText h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .cardText p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+
+  .cardImg {
+    order: 1;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .CineNav {
+    bottom: 100px;
+    gap: clamp(20px, 5vw, 40px);
+    width: calc(100% - 40px);
+  }
+
+  .NavItem p {
+    font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+    letter-spacing: clamp(1px, 0.2vw, 2px);
+  }
+
+  .NavItem::after {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 80px 20px 120px;
+
+  }
+
+  .cardImg {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .CineNav {
+    gap: 15px;
+  }
+
+  .NavLine {
+    background: linear-gradient(to right, transparent 2%, #c9b37a 50%, transparent 98%);
+  }
+}

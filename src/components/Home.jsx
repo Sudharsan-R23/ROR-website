@@ -5,15 +5,12 @@ import Banner from '../assets/B1.webp';
 import Banner2 from '../assets/B2.webp';
 import jc from '../assets/jc.webp';
 import jc2 from '../assets/godL.webp'
-import gb2 from '../assets/Game2Banner.webp'
-import Bvedio from '../assets/BackVideo.mp4';
-import W1 from '../assets/w1.png'
-import W2 from '../assets/w2.png'
-import W3 from '../assets/w3.png'
+import gb2 from '../assets/Game2Banner.webp';
 import { FaSteam, FaPlaystation, FaXbox, FaGooglePlay } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";
 import Footer from './Footer';
+import ScrollCard from './ScrollCard';
 
 
 export default function Home() {
@@ -21,10 +18,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const audioRef = useRef(null);
 
-
-
-
-  return (
+return (
 
     <div className={styles.Hcontainer}>
 
@@ -79,48 +73,8 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.SideScreentxt}>
-
-        <video autoPlay muted loop playsInline className={styles.bgVideo}>
-          <source src={Bvedio} type="video/mp4" />
-        </video>
-        <nav className={styles.CineNav}>
-          <div className={styles.NavLine}></div>
-
-          <div className={styles.NavItem}>
-            <p>WEAPON I</p>
-          </div>
-
-          <div className={styles.NavItem}>
-            <p>WEAPON II</p>
-          </div>
-
-          <div className={styles.NavItem}>
-            <p>WEAPON III</p>
-          </div>
-        </nav>
-        <section className={styles.SideScrollSection}>
-          <div className={styles.card}>
-            <div className={styles.cardText}>
-              <h1>weapon name</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
-            </div>
-            <img className={styles.cardImg} src={W1} alt="" />
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardText}>
-              <h1>weapon name</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
-            </div>
-            <img className={styles.cardImg} src={W2} alt="" />
-          </div>
-          <div className={styles.card}>
-            <div className={styles.cardText}>
-              <h1>weapon name</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime laborum. Et cum pariatur amet doloremque blanditiis eligendi omnis cupiditate!</p>
-            </div>
-            <img className={styles.cardImg} src={W3} alt="" />
-          </div>
-        </section>
+        
+        <ScrollCard/>
       </section>
       <section className={styles.FooterSec}>
         <Footer />
