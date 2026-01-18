@@ -1,4 +1,4 @@
-import { useState, useContext, useRef } from 'react';
+ import { useState, useContext, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { MdMusicNote,MdMusicOff } from "react-icons/md";import bgMusic from "../assets/music.mp3";
 import styles from '../styles/NavBar.module.css';

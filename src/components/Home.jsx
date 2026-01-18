@@ -11,6 +11,7 @@ import { SiEpicgames } from "react-icons/si";
 import { IoLogoAppleAppstore } from "react-icons/io5";
 import Footer from './Footer';
 import ScrollCard from './ScrollCard';
+import NavBar from './NavBar';
 
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
   const audioRef = useRef(null);
 
 return (
-
+  <>
+    <NavBar/>
     <div className={styles.Hcontainer}>
 
       <section className={styles.Home}>
@@ -81,6 +83,6 @@ return (
       </section>
 
     </div>
-
+  </>
   )
 }
