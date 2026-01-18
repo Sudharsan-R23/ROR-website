@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Redeem.module.css';
 import NavBar from '../components/NavBar';
+import Store from '../components/Store'
 
 export default function Redeem() {
     return (
@@ -18,6 +19,7 @@ export default function Redeem() {
             </div>
             
         </div>
+        <Store/>
         </>
     )
 }

@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '../styles/ScrollCard.module.css';
 import Bvedio from '../assets/BackVideo.mp4';
-import W1 from '../assets/w1.webp';
-import W2 from '../assets/w2.webp';
-import W3 from '../assets/w3.webp';
+import W1 from '../assets/Wepan/w1.webp';
+import W2 from '../assets/Wepan/w2.webp';
+import W3 from '../assets/Wepan/w3.webp';
 
 export default function ScrollCard() {
   const [activeIndex, setActiveIndex] = useState(0);
