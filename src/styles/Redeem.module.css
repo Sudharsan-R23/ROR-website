@@ -1,46 +1,90 @@
-.Redeemtxt{
+.redeemBody {
+    background-color: #0b0b0d97;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Redeemtxt {
     display: flex;
     justify-content: center;
     height: 400px;
     width: 100%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.884);
-    top: 0px;
     color: aliceblue;
-    position: absolute;
     font-family: 'Franklin Gothic Medium';
-    padding-top: 150px;
 }
-.Gifaction{
+
+.Gifaction {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
-.GiftBox label{
-    font-size: 40px;
-    
-   
-}
-.Gifaction button{
 
+.GiftBox label {
+    font-size: 40px;
+}
+
+.Gifaction button {
     width: 100px;
     font-size: 20px;
     border-radius: 10px;
     border: none;
 }
-.Gifaction button:hover{
+
+.Gifaction button:hover {
     cursor: pointer;
-   background-color: transparent;
-   color: aliceblue;
-   border: 2px rgb(255, 255, 255) solid;
+    background-color: black;
+    color: aliceblue;
+    border: white 2px solid;
 }
 
-.Gifaction input{
-    padding: 10px 0px 10px 10px ;
+.Gifaction input {
+    padding: 10px;
     width: 400px;
     border-radius: 10px;
     font-size: 20px;
     background-color: transparent;
-   color: aliceblue;
-   border: 2px rgb(255, 255, 255) solid;
+    color: aliceblue;
+    border: 2px white solid;
+}
+
+@media (max-width: 700px) {
+    .Gifaction button {
+        width: 80px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .Gifaction input {
+        padding: 10px;
+        width: 250px;
+        font-size: 20px;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+    .Redeemtxt {
+        height: 300px;
+    }
+
+    .Gifaction button {
+        width: 80px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .Gifaction input {
+        padding: 7px;
+        width: 200px;
+        font-size: 15px;
+
+    }
 }

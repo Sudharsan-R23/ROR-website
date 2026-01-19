@@ -7,13 +7,17 @@
  display: flex;
  flex-wrap: wrap;
  row-gap: 70px; 
- margin: 20px 30px;
+ margin: 20px 0px 0px 0px;
  justify-content:space-around ;
  column-gap: 100px; 
 }
+.TopTxt{
+    padding-bottom: 50px;
+}
 .TopUp1{
     font-family: 'Franklin Gothic Medium';
-    margin: 10px 10px 10px 10px;
+    margin: 100px 10px 100px 50px;
+    color: #000000;
 }
 .storeIteam button{
     padding: 5px 10px;

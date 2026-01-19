@@ -12,7 +12,7 @@ import Store from './components/Store'
 const path =createBrowserRouter([
   {
     path:'/',
-    element:<Home/>
+    element:<Redeem/>
   },
   {
     path:'/event',

@@ -101,24 +101,7 @@ export default function Store() {
           </label>
 
         </div>
-        <div className={styles.storeIteam}>
-          <img src={cup1} alt="" />
-          <h1>NNNJJ</h1>
-          <p>100</p>
-          <label htmlFor="">
-            <button>Buy</button>
-          </label>
-
-        </div>
-        <div className={styles.storeIteam}>
-          <img src={cup1} alt="" />
-          <h1>NNNJJ</h1>
-          <p>100</p>
-          <label htmlFor="">
-            <button>Buy</button>
-          </label>
-
-        </div>
+       
         </div>
     </section>
   )
