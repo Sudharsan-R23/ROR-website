@@ -52,6 +52,14 @@
     border: 2px white solid;
 }
 
+.StoreTxt{
+    display: flex;
+    margin: 50px 50px;
+    gap: 90px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 @media (max-width: 700px) {
     .Gifaction button {
         width: 80px;

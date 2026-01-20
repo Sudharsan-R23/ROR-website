@@ -1,16 +1,15 @@
 import React from 'react'
 import styles from '../styles/Store.module.css';
-import cup1 from '../assets/store/cup1.webp'
+import TopUpData from './TopUpData';
 
 
-
-export default function () {
+export default function (props) {
     return (
         <div className={styles.card}>
-            <img src={cup1} alt="" />
+            <img src={props.Image} alt="" />
             <div className={styles.cardItems}>
-                <h1>hjh</h1>
-                <p>jjhkjhiujhui</p>
+                <h1>{props.Title}</h1>
+                <p>{props.price}</p>
 
                 <label htmlFor=""></label>
                 <button>Buy</button>

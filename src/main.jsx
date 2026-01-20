@@ -6,8 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import UnderDev from './UnderDev'
 import Redeem from './components/Redeem'
 import Home from './components/Home'
-import TopUpData from './components/TopUpData'
-import Store from './components/Store'
 
 
 

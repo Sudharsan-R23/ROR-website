@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Redeem.module.css';
 import NavBar from '../components/NavBar';
-
+import TopUpData from './TopUpData';
 import Footer from './Footer';
 
 export default function Redeem() {
@@ -19,10 +19,15 @@ export default function Redeem() {
                             </div>
                         </form>
                     </div>
-
                 </div>
             </section>
-           
+            <h1>TOP UP</h1>
+            <div className={styles.StoreTxt}>
+                <TopUpData/>
+            </div>
+            
+            <Footer/>
             </section >
+            
             )
 }
