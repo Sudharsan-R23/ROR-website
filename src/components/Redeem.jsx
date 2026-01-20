@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Redeem.module.css';
 import NavBar from '../components/NavBar';
-import Store from '../components/Store'
+
 import Footer from './Footer';
 
 export default function Redeem() {
@@ -22,8 +22,7 @@ export default function Redeem() {
 
                 </div>
             </section>
-            <Store />
-            <Footer/>
+           
             </section >
             )
 }
