@@ -2,9 +2,9 @@ import React from 'react';
 import cup1 from '../assets/store/cup1.webp';
 import cup2 from '../assets/store/cup2.webp';
 import cup3 from '../assets/store/cup3.webp';
-import pcup1 from '../assets/store/Pcup1.webp';
-import pcup2 from '../assets/store/pcup2.webp';
-import pcup3 from '../assets/store/pcup3.webp';
+import pcup1 from '../assets/store/PPcup1.webp';
+import pcup2 from '../assets/store/PPcup2.webp';
+import pcup3 from '../assets/store/PPcup3.webp';
 import Store from './Store';
 
 
