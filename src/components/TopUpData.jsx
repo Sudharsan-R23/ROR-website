@@ -30,19 +30,19 @@ const TopUpData = [
 
       },
       {
-        Image: pcup1,
+        Image: PPcup1,
         Title: 'HealCup 10',
         price: '$29',
 
       },
       {
-        Image: pcup2,
+        Image: PPcup2,
         Title: 'HealCup 30',
         price: '$59',
 
       },
       {
-        Image: pcup3,
+        Image: PPcup3,
         Title: 'HealCup 60',
         price: '$79',
 
