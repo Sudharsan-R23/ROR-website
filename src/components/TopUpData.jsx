@@ -1,5 +1,10 @@
-import React from 'react'
+import React from 'react';
 import cup1 from '../assets/store/cup1.webp';
+import cup2 from '../assets/store/cup2.webp';
+import cup3 from '../assets/store/cup3.webp';
+import pcup1 from '../assets/store/pcup1.webp';
+import pcup2 from '../assets/store/pcup2.webp';
+import pcup3 from '../assets/store/pcup3.webp';
 import Store from './Store';
 
 
@@ -8,52 +13,40 @@ export default function TopUpData() {
 const TopUpData = [
       {
         Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Title: 'supper 10',
+        price: '$9',
 
       },
       {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Image: cup2,
+        Title: 'supper 30',
+        price: '$19',
 
       },
       {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Image: cup3,
+        Title: 'supper 50',
+        price: '$29',
 
       },
       {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Image: pcup1,
+        Title: 'HealCup 10',
+        price: '$29',
 
       },
       {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Image: pcup2,
+        Title: 'HealCup 30',
+        price: '$59',
 
       },
       {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
+        Image: pcup3,
+        Title: 'HealCup 60',
+        price: '$79',
 
-      },
-      {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
-
-      },
-      {
-        Image: cup1,
-        Title: 'hello',
-        price: 500,
-
-      },
+      }
     ]
 
    const TopUpDatas = TopUpData.map((datas)=><Store Image={datas.Image} Title={datas.Title} price={datas.price}/>);

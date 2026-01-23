@@ -1,6 +1,5 @@
-import React from 'react'
+import React from 'react';
 import styles from '../styles/Store.module.css';
-import TopUpData from './TopUpData';
 
 
 export default function (props) {

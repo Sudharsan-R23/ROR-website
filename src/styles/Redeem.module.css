@@ -1,98 +1,86 @@
 .redeemBody {
-    background-color: #0b0b0d97;
-
+  background: linear-gradient(#0a0a0a, #2f2f2f);
+  min-height: 100vh;
+  color: white;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.redeemHero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Redeemtxt {
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    width: 100%;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.884);
-    color: aliceblue;
-    font-family: 'Franklin Gothic Medium';
-}
-
-.Gifaction {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+.GiftBox {
+  text-align: center;
 }
 
 .GiftBox label {
-    font-size: 40px;
+  font-size: 42px;
+  letter-spacing: 4px;
+  font-family: "Caesar Dressing", system-ui;
 }
 
-.Gifaction button {
-    width: 100px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: none;
-}
-
-.Gifaction button:hover {
-    cursor: pointer;
-    background-color: black;
-    color: aliceblue;
-    border: white 2px solid;
+.Gifaction {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 .Gifaction input {
-    padding: 10px;
-    width: 400px;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: transparent;
-    color: aliceblue;
-    border: 2px white solid;
+  width: 360px;
+  padding: 14px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #c9b37a;
+  color: white;
+  font-size: 16px;
 }
 
-.StoreTxt{
-    display: flex;
-    margin: 50px 50px;
-    gap: 90px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.Gifaction button {
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-@media (max-width: 700px) {
-    .Gifaction button {
-        width: 80px;
-        font-size: 15px;
-        border-radius: 10px;
-        border: none;
-    }
-
-    .Gifaction input {
-        padding: 10px;
-        width: 250px;
-        font-size: 20px;
-
-    }
-
+.Gifaction button:hover {
+  background: transparent;
+  border: 2px solid #c9b37a;
+  color: #c9b37a;
 }
 
-@media (max-width: 400px) {
-    .Redeemtxt {
-        height: 300px;
-    }
+.topUpSection {
+  background-color: #6f6f6f;
+  padding: 60px 40px;
+}
 
-    .Gifaction button {
-        width: 80px;
-        font-size: 15px;
-        border-radius: 10px;
-        border: none;
-    }
+.topUpTitle {
+  text-align: center;
+  font-family: "Caesar Dressing", system-ui;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
 
-    .Gifaction input {
-        padding: 7px;
-        width: 200px;
-        font-size: 15px;
+.StoreTxt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+}
 
-    }
+
+@media (max-width: 600px) {
+  .Gifaction {
+    flex-direction: column;
+  }
+
+  .Gifaction input {
+    width: 100%;
+  }
+
+  .Gifaction button {
+    width: 100%;
+  }
 }
