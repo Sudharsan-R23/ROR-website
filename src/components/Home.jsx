@@ -12,6 +12,7 @@ import { IoLogoAppleAppstore } from "react-icons/io5";
 import Footer from './Footer';
 import ScrollCard from './ScrollCard';
 import NavBar from './NavBar';
+import BV from '../assets/videos/BV.mp4';
 
 
 export default function Home() {
@@ -27,7 +28,9 @@ return (
       <section className={styles.Home}>
 
         <div className={styles.HeadDev}>
-          <img src={Banner} alt="" loading="lazy" />
+          <video autoPlay muted loop playsInline preload="none" className={styles.HeadVedio}>
+                  <source src={BV} type="video/mp4" />
+                </video>
 
           <div className={styles.HomeContxt}>
 
