@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '../styles/ScrollCard.module.css';
-import Bvedio from '../assets/videos/BackVideo.mp4';
+import Bvedio from '../assets/videos/BackVideo.webm';
 import W1 from '../assets/Wepan/w1.webp';
 import W2 from '../assets/Wepan/w2.webp';
 import W3 from '../assets/Wepan/w3.webp';
@@ -60,7 +60,7 @@ export default function ScrollCard() {
 
   return (
     <section className={styles.SideScreentxt}>
-      <video autoPlay muted loop playsInline preload="none" className={styles.bgVideo}>
+      <video autoPlay muted loop playsInline  loading="lazy" preload="none" className={styles.bgVideo}>
         <source src={Bvedio} type="video/mp4" />
       </video>
 

@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css';
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Banner from '../assets/B1.webp';
 import Banner2 from '../assets/B2.webp';
 import jc from '../assets/jc.webp';
 import jc2 from '../assets/godL.webp'
@@ -12,7 +11,7 @@ import { IoLogoAppleAppstore } from "react-icons/io5";
 import Footer from './Footer';
 import ScrollCard from './ScrollCard';
 import NavBar from './NavBar';
-import BV from '../assets/videos/BV3.mp4';
+import BV from '../assets/videos/BV3.webm';
 
 
 export default function Home() {
@@ -28,7 +27,7 @@ return (
       <section className={styles.Home}>
 
         <div className={styles.HeadDev}>
-          <video autoPlay muted loop playsInline preload="none" className={styles.HeadVedio}>
+          <video autoPlay muted loop  loading="lazy" playsInline preload="none" className={styles.HeadVedio}>
                   <source src={BV} type="video/mp4" />
                 </video>
 
@@ -56,9 +55,9 @@ return (
         </div>
       </section>
       <section className={styles.Game}>
-        <img className={styles.GameBanner} src={Banner2} alt="" />
+        <img className={styles.GameBanner}  loading="lazy" src={Banner2} alt="" />
         <div className={styles.GameContxt}>
-          <img className={styles.GameImg} src={jc} alt="" />
+          <img className={styles.GameImg}  loading="lazy" src={jc} alt="" />
           <div className={styles.GameItem}>
             <h1>Throne Demands Blood</h1>
             <p>Once crowned ruler of Valemarch, King Aldric lost his kingdom to invasion, betrayal, and war. His castle fell, his banner was torn down, and his people were scattered across foreign lands.</p>
@@ -74,7 +73,7 @@ return (
             <p>The Sultanate of Al-Zahra is a powerful Muslim empire built on discipline, unity, and strategic mastery. Rising from the deserts and great cities of the east, the empire expanded through strength and belief in order.</p>
             <p>To them, conquered lands are not stolen—they are secured for stability and survival. As King Aldric seeks to reclaim his lost kingdom, Al-Zahra stands as both his greatest enemy and a reminder that every empire believes its cause is just.</p>
           </div>
-          <img className={styles.GameImg} src={jc2} alt="" />
+          <img className={styles.GameImg}  loading="lazy" src={jc2} alt="" />
         </div>
       </section>
       <section className={styles.SideScreentxt}>

@@ -16,7 +16,7 @@ export default function Footer() {
   return (
 
     <div className={styles.Footertxt}>
-      <img src={FooterBanner} alt="" />
+      <img src={FooterBanner}  loading="lazy" alt="" />
       <div className={styles.FooterSec1}>
         <div className={styles.FooterLogo}>
           <img src={Logo} alt="" />
