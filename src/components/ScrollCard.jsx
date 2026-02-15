@@ -71,7 +71,7 @@ export default function ScrollCard() {
               <h1>{weapon.name}</h1>
               <p>{weapon.description}</p>
             </div>
-            <img className={styles.cardImg} src={weapon.image} alt={weapon.name} loading='lazy'/>
+            <img className={styles.cardImg} src={weapon.image} alt={weapon.name} preload="none" loading='lazy'/>
           </div>
         ))}
       </section>

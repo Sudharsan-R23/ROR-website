@@ -16,12 +16,12 @@ export default function Footer() {
   return (
 
     <div className={styles.Footertxt}>
-      <img src={FooterBanner}  loading="lazy" alt="" />
+      <img src={FooterBanner}  loading="lazy" preload="none" alt="" />
       <div className={styles.FooterSec1}>
         <div className={styles.FooterLogo}>
-          <img src={Logo} alt="" />
-          <img src={Unreal} alt="" />
-        </div>
+          <img src={Logo} loading="lazy" preload="none" alt="" />
+          <img src={Unreal} loading="lazy" preload="none" alt="" />
+        </div> 
         <div className={styles.Icons}>
           <h1 className={styles.FooterH1}>JOINT NOW |</h1>
           <FaInstagram onClick={() => openLink('https://instagram.com')} />

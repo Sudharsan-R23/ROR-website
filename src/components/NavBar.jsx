@@ -43,7 +43,7 @@ export default function NavBar() {
       <audio ref={audioRef} src={bgMusic} loop preload="auto" />
       <header className={`${styles.Header} ${mobileOpen ? styles.showH : ''}`}>
         <nav className={styles.NavBar}>
-          <img src={Logo} className={styles.Logo} alt="logo" />
+          <img src={Logo} className={styles.Logo} preload="none" alt="logo" />
 
           <div className={styles.Menu}>
             <button className={styles.musicBtn} onClick={toggleMusic}>

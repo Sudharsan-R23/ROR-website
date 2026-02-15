@@ -55,9 +55,9 @@ return (
         </div>
       </section>
       <section className={styles.Game}>
-        <img className={styles.GameBanner}  loading="lazy" src={Banner2} alt="" />
+        <img className={styles.GameBanner}  preload="none" loading="lazy" src={Banner2} alt="" />
         <div className={styles.GameContxt}>
-          <img className={styles.GameImg}  loading="lazy" src={jc} alt="" />
+          <img className={styles.GameImg} preload="none"  loading="lazy" src={jc} alt="" />
           <div className={styles.GameItem}>
             <h1>Throne Demands Blood</h1>
             <p>Once crowned ruler of Valemarch, King Aldric lost his kingdom to invasion, betrayal, and war. His castle fell, his banner was torn down, and his people were scattered across foreign lands.</p>
@@ -66,14 +66,14 @@ return (
         </div>
       </section>
       <section className={styles.Game2}>
-        <img className={styles.GameBanner} src={gb2} alt="" loading='lazy'/>
+        <img className={styles.GameBanner} src={gb2} alt="" preload="none" loading='lazy'/>
         <div className={`${styles.GameContxt} ${styles.Game2Contxt}`}>
           <div className={styles.GameItem}>
             <h1>Desert Forged Power</h1>
             <p>The Sultanate of Al-Zahra is a powerful Muslim empire built on discipline, unity, and strategic mastery. Rising from the deserts and great cities of the east, the empire expanded through strength and belief in order.</p>
             <p>To them, conquered lands are not stolen—they are secured for stability and survival. As King Aldric seeks to reclaim his lost kingdom, Al-Zahra stands as both his greatest enemy and a reminder that every empire believes its cause is just.</p>
           </div>
-          <img className={styles.GameImg}  loading="lazy" src={jc2} alt="" />
+          <img className={styles.GameImg} preload="none"  loading="lazy" src={jc2} alt="" />
         </div>
       </section>
       <section className={styles.SideScreentxt}>
