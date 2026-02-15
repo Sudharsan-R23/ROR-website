@@ -12,7 +12,7 @@ import { IoLogoAppleAppstore } from "react-icons/io5";
 import Footer from './Footer';
 import ScrollCard from './ScrollCard';
 import NavBar from './NavBar';
-import BV from '../assets/videos/BV.mp4';
+import BV from '../assets/videos/BV3.mp4';
 
 
 export default function Home() {
@@ -35,7 +35,7 @@ return (
           <div className={styles.HomeContxt}>
 
             <h1>REVENGE OF REALMS</h1>
-            <p>Latin Christian kingdoms of Europe</p>
+            <p>Latin Christian kingdoms of Europe.</p>
 
             <div className={styles.ButtonContxt}>
               <button>PLAY</button>
